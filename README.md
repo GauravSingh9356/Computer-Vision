@@ -11,7 +11,7 @@ Handwritten digit recognition with CNN model using tensorflow, OpenCV
 </ul>
 
 
-### Execution for showing single digit detection through webcam
+### Detecting single digit detection through webcam
 
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/digit_recognition.gif">
