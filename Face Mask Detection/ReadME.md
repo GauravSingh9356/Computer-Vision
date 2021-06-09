@@ -6,7 +6,6 @@ Face Mask Detection with CNN model using tensorflow, OpenCV
 
 <ul>
   <li>Network used : Convolutional Network</li>
-  <li>Dataset : MNIST Dataset</li>
   <li>Framework used : Tensorflow</li>
   <li>API used : Keras</li>
   <li>Computer Vision library used : openCV</li>
