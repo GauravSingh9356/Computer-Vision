@@ -34,5 +34,6 @@ After we get traffic sign images we are processing every frame of the video (up 
 
 Our model will output the predictions and will show us the class name in which that image belongs to. Our system will also show the probability of the correctness of prediction.
 
-## Conclusion
-We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately. Our model reached close to close to 90% accuracy on the test set which isgood considering limitation of computational power and with a fairly simple architecture. 
+## Accuracy (v1.0.1)
+We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately. Our model reached close to close to 97% accuracy on the test set which isgood considering limitation of computational power and with a fairly simple architecture. 
+
