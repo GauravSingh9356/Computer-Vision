@@ -3,6 +3,7 @@
 Train and classify Traffic Signs using Convolutional neural networks. This will be done using OPENCV in real time using a simple webcam
 
 ## Convolutional Neural Network
+<img src="https://www.mdpi.com/applsci/applsci-10-01245/article_deploy/html/images/applsci-10-01245-g002.png"/>
 A Convolutional Neural Network are very similar ordinary neural networks. They are made up of neurons with learnable weights and biases which is also known as supervised learning. All the basic idea learned or used for ordinary neural networks are also applicable to CNNs. The only difference between CNN and the ordinary neural network is that CNN assumes that input is an image rather than a vector. This vastly reduces the number of parameters to be tuned in a model. Convolutional Nets models are easy and faster to train on images comparatively to the traditional models.
 
 ## Labels and dataset
