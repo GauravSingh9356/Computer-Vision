@@ -20,9 +20,9 @@ Same as the traditional neural networks convolutional neural networks is same as
 
 
 ## Training the model
-To train the model, we have used an Adam optimizer with batch size 32 and number of epoch is 20.
+To train the model, we have used an Adam optimizer with batch size 32 and number of epoch is 10.
 
-We followed a simple approach and ran only 20 epochs of the training and observed the validation error trying to set it on minimum level and also due to limitation of computational power. It is very important to consider mainly validation error while improving the model. Decreasing only the error with respect to training data can easily lead to unwanted model over fitting.
+We followed a simple approach and ran only 10 epochs of the training and observed the validation error trying to set it on minimum level and also due to limitation of computational power. It is very important to consider mainly validation error while improving the model. Decreasing only the error with respect to training data can easily lead to unwanted model over fitting.
 Please make sure to update tests as appropriate.
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(408).png"/>
