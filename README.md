@@ -5,3 +5,4 @@
 <li><a href="https://github.com/GauravSingh9356/Computer-Vision/tree/master/QR%20and%20Bar%20Code%20Scanner">QR and Bar Code Scanner</a></li>
 
 <li><a href="https://github.com/GauravSingh9356/Computer-Vision/tree/master/Face%20Mask%20Detection">Face Mask Detection</a></li>
+<li><a href="https://github.com/GauravSingh9356/Computer-Vision/tree/master/Sign%20Board%20Detection">Sign Board Detection</a></li>
