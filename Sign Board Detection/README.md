@@ -34,8 +34,45 @@ After we get traffic sign images we are processing every frame of the video (up 
 
 Our model will output the predictions and will show us the class name in which that image belongs to. Our system will also show the probability of the correctness of prediction.
 
-## Accuracy (v1.0.1)
+## Result and Accuracy( Image Detection)
 We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately. Our model reached close to close to 97% accuracy on the test set which isgood considering limitation of computational power and with a fairly simple architecture. 
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
+
+## Text Detection
+Text detection is the process of localizing where an image text is. You can think of text detection as a specialized form of object detection.
+In object detection, our goal is to detect and compute the bounding box of all objects in an image and determine the class label for each bounding box while in text detection our goal is to automatically compute the bounding boxes for every region of text in an image. 
+
+
+* **Tesseract OCR(Text localization and detection) :**  At first for Text Detection part we decided to use Tesseract which includes a highly accurate deep learning-based model for text recognition to read text from images and to implement this using python we used a wrapper function tesseract.py.
+
+
+
+
+* **Image Processing :** Tesseract model is trained on data set images with text  black and background white so we did following image processing:
+    * Resize the image with variable height and width(multiply 0.5 and 1 and 2 with image height and width).
+    * Convert the image to Gray scale format(Black and white).
+    * Remove the noise pixels and make more clear(Filter the image).
+
+
+* **EAST (Efficient accurate scene text detector) :** As we did not get the satisfactory results using Tesseract all alone we integrated EAST alongwith Tesseract in our model. EAST is a very robust deep learning method for text detection. It can find horizontal and rotated bounding boxes, it can be used in combination with any text recognition method. EAST can also detect text both in images and in the video it runs near real-time at 13FPS on 720p images with high text detection accuracy. Another benefit of this technique is that its implementation is available in OpenCV 3.4.2 and OpenCV 4.
+    * Use EAST text detection model to detect the presence of text in an image.
+    * Extract the text Region of Interest (ROI) from the image using basic image cropping/NumPy array slicing
+    * Take the text ROI, and then pass it into Tesseract to actually OCR the text.
+IF CNN model fails to detect images then EAST and Tesseract will detect the image hence our model has become more robust.
+
+
+
+* **Text to speach :**  After the text is detected it can also be converted into spoken language with the help of text to speach functionality.
+
+
+
+
+
+ 
+
+
+
+
+
 
