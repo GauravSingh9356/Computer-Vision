@@ -38,6 +38,7 @@ Our model will output the predictions and will show us the class name in which t
 We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately. Our model reached close to close to 97% accuracy on the test set which isgood considering limitation of computational power and with a fairly simple architecture. 
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
+
 ## VGG16 Transfer Learning Model
 Transfer learning generally refers to a process where a model trained on one problem is used in some way on a second related problem. In deep learning, transfer learning is a technique whereby a neural network model is first trained on a problem similar to the problem that is being solved. One or more layers from the trained model are then used in a new model trained on the problem of interest.
 * **Utilizing the VGG16 Model :** We implimented VGG16 model and trained the same to detect traffic signals. VGG16 is a convolutional neural network trained on a subset of the ImageNet dataset, a collection of over 14 million images belonging to 22,000 categories.
