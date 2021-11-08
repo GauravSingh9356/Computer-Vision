@@ -38,6 +38,21 @@ Our model will output the predictions and will show us the class name in which t
 We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately. Our model reached close to close to 97% accuracy on the test set which isgood considering limitation of computational power and with a fairly simple architecture. 
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
+## VGG16 Transfer Learning Model
+Transfer learning generally refers to a process where a model trained on one problem is used in some way on a second related problem. In deep learning, transfer learning is a technique whereby a neural network model is first trained on a problem similar to the problem that is being solved. One or more layers from the trained model are then used in a new model trained on the problem of interest.
+* **Utilizing the VGG16 Model :** We implimented VGG16 model and trained the same to detect traffic signals. VGG16 is a convolutional neural network trained on a subset of the ImageNet dataset, a collection of over 14 million images belonging to 22,000 categories.
+<img src="https://storage.googleapis.com/lds-media/images/vgg16-architecture.width-1200.jpg"/>
+The VGG16 Model has 16 Convolutional and Max Pooling layers, 3 Dense layers for the Fully-Connected layer, and an output layer of 1,000 nodes.
+
+* **Use-Cases and Implementation :** Unfortunately, there are two major drawbacks with VGGNet:
+    - It is painfully slow to train.
+    - The network architecture weights themselves are quite large (concerning disk/bandwidth).
+Due to its depth and number of fully-connected nodes, VGG16 is over 533MB. This makes deploying VGG a tiresome task.
+
+* **Result and Accuracy :** <img src="https://github.com/prashantprem/Computer-Vision/blob/master/Sign%20Board%20Detection/vgg_result.png"/> 
+The above image indicates the input of the image and another one when I upload traffic this shows the desired output of an image. Traffic Sign Classification is very necessary to identify traffic signs much faster even though the traffic sign is in any size or shape. Even though the traffic sign is a blur and faded then also with this we can detect it very easily as shown in image(on right). Traffic sign detection is very necessary to take place detection automatically when we are in travelling in a vehicle. This helps to detect the traffic signal before the traffic sign is arrived. This alerts the when the person is in sleepy mode. This also guides the way of road automatically.
+**The VGG16 is implemented for the traffic sign classification of images. VGG16 holds 82.77% Accuracy, but as our CNN model has better accuracy we decided to dump this model.**
+
 
 ## Text Detection
 Text detection is the process of localizing where an image text is. You can think of text detection as a specialized form of object detection.
