@@ -90,5 +90,10 @@ We have used gTTS (Google Text-to-Speech), a Python library and CLI tool to inte
 We Succeded in creating a robust model to detect images and also extract text from it. We used CNN model firstly to detect diffrent sign boards for this we created 43 diffrent classes and trained it with over 35000 images and later for text detection we imlimented EAST with Tesseract OCR. EAST model detects the presence of text in an image and extracts the Region of Interest using image processing and then passing it to Tesseract to actually OCR the text. So even if CNN model fails to detetect the sign board with text, EAST will automatically detect it and hence our model becomes more robust.
 <img src="https://github.com/prashantprem/Computer-Vision/blob/master/Sign%20Board%20Detection/test_image.jpeg"/>
 
+## Accuracy
+We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately.We also integrated EAST model alongwith Tesseract to make our model more robust. Our model reached close to close Validation accuracy of 99.4% and overall accuracy of 96.4% accuracy on the test set.
+
+<img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
+
 ## Conclusion and Future Scope
 Till now our main objective was to understand the working of any detection model and to implement it from scratch. We can furthure look to increase the performances of the models we can train our models with a large dataset. 
