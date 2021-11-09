@@ -72,6 +72,9 @@ In object detection, our goal is to detect and compute the bounding box of all o
 
 
 * **EAST (Efficient accurate scene text detector) :** As we did not get the satisfactory results using Tesseract all alone we integrated EAST alongwith Tesseract in our model. EAST is a very robust deep learning method for text detection. It can find horizontal and rotated bounding boxes, it can be used in combination with any text recognition method. EAST can also detect text both in images and in the video it runs near real-time at 13FPS on 720p images with high text detection accuracy. Another benefit of this technique is that its implementation is available in OpenCV 3.4.2 and OpenCV 4.
+<img src="https://github.com/prashantprem/Computer-Vision/blob/master/Sign%20Board%20Detection/text_detection_east.jpg"/>
+(The structure of the EAST text detection Fully Convolutional Network)
+
     * Use EAST text detection model to detect the presence of text in an image.
     * Extract the text Region of Interest (ROI) from the image using basic image cropping/NumPy array slicing
     * Take the text ROI, and then pass it into Tesseract to actually OCR the text.
@@ -79,16 +82,18 @@ IF CNN model fails to detect images then EAST and Tesseract will detect the imag
 
 
 
+
 * **Text to speach :**  After the text is detected it can also be converted into spoken language with the help of text to speach functionality.
+We have used gTTS (Google Text-to-Speech), a Python library and CLI tool to interface with Google Translate's text-to-speech API. We take the extracted text then create a gTTS object and use this text and select the language as English and we select slow = False because our converted audio will have a high speed and to open the audio file automatically we have to import os os.system().
 
+## Result
+We Succeded in creating a robust model to detect images and also extract text from it. We used CNN model firstly to detect diffrent sign boards for this we created 43 diffrent classes and trained it with over 35000 images and later for text detection we imlimented EAST with Tesseract OCR. EAST model detects the presence of text in an image and extracts the Region of Interest using image processing and then passing it to Tesseract to actually OCR the text. So even if CNN model fails to detetect the sign board with text, EAST will automatically detect it and hence our model becomes more robust.
+<img src="https://github.com/prashantprem/Computer-Vision/blob/master/Sign%20Board%20Detection/test_image.jpeg"/>
 
+## Accuracy
+We have successfully implemented a Convolutional Neural Network to the Traffic Sign Recognition task with greater than 90% accuracy on average. We have covered how deep learning can be used to classify traffic signs with high accuracy, employing a variety of pre-processing and visualization techniques and trying different model architectures. We built a simple easy to understand CNN model to recognize road traffic signs accurately.We also integrated EAST model alongwith Tesseract to make our model more robust. Our model reached close to close Validation accuracy of 99.4% and overall accuracy of 96.4% accuracy on the test set.
 
+<img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
 
-
- 
-
-
-
-
-
-
+## Future Scope
+Till now our main objective was to understand the working of any detection model and to implement it from scratch. We can furthure look to increase the performances of the models we can train our models with a large dataset. In order to improve its accuracy, our future approach will be based on gathering more enhanced techniques from various sources and improving the proposed image processing algorithm.
