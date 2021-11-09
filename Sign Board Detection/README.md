@@ -95,5 +95,5 @@ We have successfully implemented a Convolutional Neural Network to the Traffic S
 
 <img src="https://github.com/GauravSingh9356/Computer-Vision/blob/master/Sign%20Board%20Detection/Screenshot%20(411).png"/>
 
-## Conclusion and Future Scope
-Till now our main objective was to understand the working of any detection model and to implement it from scratch. We can furthure look to increase the performances of the models we can train our models with a large dataset. 
+## Future Scope
+Till now our main objective was to understand the working of any detection model and to implement it from scratch. We can furthure look to increase the performances of the models we can train our models with a large dataset. In order to improve its accuracy, our future approach will be based on gathering more enhanced techniques from various sources and improving the proposed image processing algorithm.
